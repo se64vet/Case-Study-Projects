@@ -1,0 +1,660 @@
+header {
+  background: #253e63;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#headBar {
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 1fr max(50%) 1fr;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  background: #253e63;
+  color: whitesmoke;
+}
+#headBar .link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+#headBar #logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 1.4em;
+  text-align: end;
+  padding-right: 3em;
+}
+#headBar #hamburgerBtn {
+  display: none;
+}
+#headBar #nav .navList {
+  list-style: none;
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0em;
+  margin: 0;
+  height: 100%;
+  opacity: 80%;
+}
+#headBar #nav .navList .nav-item {
+  padding: 0;
+  margin: 0;
+}
+#headBar #myProperty {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.5em;
+}
+#headBar #post {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.pinkBtn {
+  background: #fa6d8e;
+  color: whitesmoke;
+  border: none;
+  border-radius: 2em;
+  padding: 1em 2em;
+}
+
+.sectionLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5em;
+  justify-content: center;
+  align-items: start;
+  padding: 3em 10%;
+  background: white;
+  width: auto;
+}
+
+.item-block {
+  flex-grow: 1;
+  width: 100%;
+}
+.item-block .itemTitle {
+  text-transform: uppercase;
+  color: #3e77c2;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+.item-block .content {
+  line-height: 1.6;
+  color: grey;
+  max-width: 100%;
+}
+
+.primaryText {
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: block;
+  text-align: center;
+}
+
+.subText {
+  color: #979696;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+}
+
+#ad {
+  flex-grow: 1;
+  height: 83vh;
+  padding-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  overflow: hidden;
+}
+#ad h1 {
+  color: whitesmoke;
+  font-size: 4em;
+  line-height: 1.2;
+}
+#ad h1 span {
+  display: block;
+}
+#ad #signUp {
+  padding: 1em 4em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+#ad #adImg img {
+  transform: scale(1.3) translateY(4em);
+}
+
+#introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#introduce #title-block {
+  text-align: center;
+  padding: 2em 0;
+  margin: 2em 0;
+}
+#introduce #title-block span {
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#introduce #video-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 4em;
+}
+#introduce #video-block img {
+  max-width: 45%;
+}
+
+#solution {
+  background: #f8f7f7;
+}
+#solution #solutionTitle {
+  margin: 4em 0;
+}
+#solution #solutionTitle span {
+  display: block;
+  text-align: center;
+}
+#solution #app-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+}
+#solution #app-block img {
+  max-width: 50%;
+  box-shadow: -1px 15px 46px -20px rgba(0, 0, 0, 0.75);
+}
+
+#toolSection {
+  background: #25497a;
+  padding-bottom: 4em;
+}
+#toolSection #toolTitle {
+  padding: 4em 0;
+}
+#toolSection #toolTitle .primaryText {
+  color: whitesmoke;
+}
+#toolSection #toolTitle .subText {
+  max-width: 50%;
+  margin: 0 auto;
+  color: #bfdbff;
+}
+#toolSection #toolContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  width: 60%;
+  margin: auto;
+}
+#toolSection #toolContent .textContent .fas {
+  color: #bfdbff;
+  opacity: 0.8;
+  padding: 0 10px;
+}
+#toolSection #toolContent .textContent .article {
+  width: 100%;
+}
+#toolSection #toolContent .textContent .article span {
+  display: block;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: whitesmoke;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+#toolSection #toolContent .textContent .article p {
+  font-size: 0.8em;
+  color: #bfdbff;
+  opacity: 0.8;
+}
+#toolSection #toolContent .contentLeft {
+  text-align: end;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  padding-top: 4em;
+}
+#toolSection #toolContent .contentRight {
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding-top: 4em;
+}
+#toolSection #toolContent .imgContent {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  margin: auto;
+}
+#toolSection #toolContent .imgContent img {
+  border-radius: 5%;
+}
+
+#clientsSection {
+  border-bottom: 2px solid lightgrey;
+}
+#clientsSection .title {
+  padding: 5em 0 2em 0;
+}
+#clientsSection .brand {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4em;
+  align-items: center;
+  width: auto;
+  margin: 1em auto 8em auto;
+}
+#clientsSection .brand .brandItem {
+  width: auto;
+  height: 5em;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clientsSection .brand .brandItem .brandIMG {
+  max-width: 10em;
+  opacity: 0.2;
+}
+
+#feedbackSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10em 5rem;
+  width: auto;
+}
+#feedbackSection .leftArrow, #feedbackSection .rightArrow {
+  opacity: 0.3;
+  padding: 0 3em;
+}
+#feedbackSection .feedbackContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 1em;
+  width: auto;
+}
+#feedbackSection .feedbackContent .authorIMG img {
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#feedbackSection .feedbackContent .mainfeedback {
+  width: 70%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+#feedbackSection .feedbackContent .mainfeedback .feedback {
+  font-size: 1.5em;
+  color: gray;
+}
+#feedbackSection .feedbackContent .mainfeedback .customerInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+  position: absolute;
+}
+#feedbackSection .feedbackContent .mainfeedback .customerInfo .companyLogo img {
+  width: 1.7em;
+  height: 1.7em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#feedbackSection .feedbackContent .mainfeedback .customerInfo .name_occupation {
+  display: flex;
+  flex-direction: column;
+}
+#feedbackSection .feedbackContent .mainfeedback .customerInfo .name_occupation span:nth-child(1) {
+  color: #3e77c2;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#feedbackSection .feedbackContent .mainfeedback .customerInfo .name_occupation span:nth-child(2) {
+  font-size: 0.7em;
+}
+
+#register {
+  background: #f8f7f7;
+  padding: 1em;
+  width: auto;
+}
+#register #registerTitle {
+  padding-top: 3em;
+  transform: scale(0.8);
+}
+#register .registerForm {
+  padding: 3em 0;
+  width: auto;
+}
+#register .registerForm form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5em;
+}
+#register .registerForm form input {
+  height: 100%;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border: 2px solid lightgrey;
+  width: 15em;
+}
+#register .registerForm form input::placeholder {
+  color: lightgrey;
+  font-weight: 400;
+  font-size: 1em;
+  padding: 0 1em;
+}
+#register .registerForm form button {
+  background: #3e77c2;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.6em;
+  padding: 0 3em;
+  height: 100%;
+  border: 2px solid #3e77c2;
+  border-bottom-right-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
+#appDownload {
+  margin: 4em 0;
+}
+#appDownload .appIcon img {
+  width: 8em;
+  height: 8em;
+  margin: auto;
+}
+#appDownload #appText {
+  margin: 1em 0;
+  transform: scale(0.8);
+}
+#appDownload .downloadBtn {
+  background: #308aff;
+  color: whitesmoke;
+  width: 7em;
+  margin: auto;
+  padding: 0.2em 0.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  text-align: end;
+  border-radius: 5px;
+}
+#appDownload .downloadBtn span:nth-last-child(2) {
+  display: block;
+  font-size: 0.6em;
+  line-height: 1;
+}
+#appDownload .downloadBtn span:nth-last-child(1) {
+  display: block;
+  letter-spacing: 1px;
+  font-weight: 500;
+  line-height: 1;
+}
+#appDownload .downloadBtn i {
+  position: absolute;
+  left: auto;
+  transform: scale(1.5) translateX(-3.5em) translateY(3px);
+}
+
+#footer {
+  height: 10em;
+  background: #253e63;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2em;
+  width: auto;
+}
+#footer .logo {
+  margin: 1em;
+}
+#footer .logo span {
+  font-size: 1em;
+  font-weight: 600;
+  color: whitesmoke;
+}
+#footer .internalLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: center;
+}
+#footer .internalLinks div {
+  width: 100%;
+}
+#footer .internalLinks div ul {
+  list-style: none;
+  padding: 0 1em;
+}
+#footer .internalLinks div ul a {
+  text-decoration: none;
+  color: #bfdbff;
+}
+#footer .internalLinks div ul a li {
+  text-transform: uppercase;
+  font-size: 0.5em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 3;
+}
+#footer .social {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+}
+#footer .social div {
+  background: #1a3255;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.7);
+}
+#footer .social div i {
+  color: #3e77c2;
+}
+
+@media only screen and (max-width: 720px) {
+  .description {
+    flex-wrap: wrap;
+  }
+
+  #feedbackSection {
+    padding: 5em 0;
+  }
+
+  .feedbackContent {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .feedbackContent .authorIMG {
+    width: 100% !important;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .feedbackContent .mainfeedback {
+    width: 100% !important;
+    flex-grow: 1;
+  }
+
+  #toolSection #toolContent {
+    display: flex;
+    flex-direction: column;
+  }
+  #toolSection #toolContent .imgContent {
+    grid-row: 1/4;
+    grid-column: 1/2;
+  }
+  #toolSection #toolContent .imgContent img {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .appear {
+    transform: translateX(0) !important;
+  }
+
+  #headBar {
+    display: flex;
+    flex-direction: column;
+    height: 7em !important;
+    margin-bottom: 1em;
+  }
+  #headBar #hamburgerBtn {
+    display: block;
+    width: 1.5em;
+    height: 5px;
+    background: lightgrey;
+    border-radius: 1em;
+    position: absolute;
+    z-index: 4;
+    left: 1em;
+    top: 3em;
+  }
+  #headBar #hamburgerBtn::before {
+    display: block;
+    width: 1.5em;
+    height: 5px;
+    content: "";
+    background: lightgrey;
+    border-radius: 1em;
+    transform: translateY(-8px);
+  }
+  #headBar #hamburgerBtn::after {
+    display: block;
+    width: 1.5em;
+    height: 5px;
+    content: "";
+    background: lightgrey;
+    border-radius: 1em;
+    transform: translateY(3px);
+  }
+  #headBar #nav {
+    transform: translateX(-100em);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 60vw;
+    background: whitesmoke;
+    padding-top: 7em;
+    z-index: 2;
+    transition: 1s ease;
+  }
+  #headBar #nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em !important;
+    align-items: flex-start !important;
+    padding-left: 1em !important;
+    opacity: 100% !important;
+    color: #25497a;
+  }
+  #headBar #nav ul li a {
+    color: #1a3255;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  #headBar #myProperty {
+    position: absolute;
+    z-index: 3;
+    left: 1em;
+    transform: translateX(-100em);
+    transition: 1s ease;
+  }
+  #headBar #myProperty #signIn {
+    position: absolute;
+    z-index: 3;
+    top: 15em;
+    left: 2.6em;
+    width: max-content;
+  }
+  #headBar #myProperty #signIn a {
+    color: #1a3255;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  #headBar #myProperty #post {
+    position: absolute;
+    top: 23em;
+    width: max-content;
+  }
+
+  #ad h1 {
+    font-size: 3em;
+  }
+
+  #footer {
+    flex-direction: column;
+    box-sizing: border-box;
+    height: auto;
+    text-align: center;
+    gap: 0;
+  }
+  #footer .internalLinks {
+    flex-direction: column;
+    gap: 0;
+  }
+  #footer .internalLinks div {
+    padding: 0;
+  }
+  #footer .internalLinks div li {
+    font-size: 1em !important;
+    letter-spacing: 4px;
+  }
+  #footer .social {
+    transform: scale(1.3);
+    margin: 1em auto;
+  }
+  #footer .logo span {
+    font-size: 2em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
