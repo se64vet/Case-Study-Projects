@@ -1,0 +1,131 @@
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Inconsolata', monospace;
+}
+
+/* css ultilities class */
+.script-font{
+    font-family: 'Great Vibes', cursive;
+}
+.main-color{
+    color: salmon;
+}
+.sub-color{
+    color: rgb(179, 91, 81);
+}
+.opp-color{
+    color: skyblue;
+}
+.text-color{
+    color: gray;
+}
+/* Navbar */
+.navbar-nav{
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+
+
+
+/* Header */
+.backdrop{
+    background-image: url('../img/background2.jpg');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    height: 500px;
+    overflow: hidden;
+}
+.content{
+    background: rgba(112, 112, 112, 0.6);
+    width: 300px;
+    height: 300px;
+    font-family: 'Great Vibes', cursive;
+}
+.content h1{
+    font-size: 3em;
+}
+.groom{
+    transform: rotate(-10deg) translateY(50px) translateX(-120px);
+    
+}
+.bride{
+    transform: rotate(10deg) translateY(80px) translateX(120px);
+    
+}
+
+/* flower line break */
+.line{
+    width: 100px;
+    height: 2px;
+    padding: 1px;
+}
+.line-break img{
+    max-width: 100px;
+}
+
+/* carousel */
+.carousel-img{
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* invitation card */
+.invitation-card {
+    border: 1px solid rgb(109, 164, 185);
+}
+.btn-primary{
+    background: skyblue;
+    border: none;
+}
+
+/* Donation */
+.donation-title h2{
+    font-size: 2.5em;
+    color: gray;
+}
+.donation-description p{color: gray;}
+.btn-danger{
+    font-weight: 600;
+    font-size: 1.1em;
+    background: rgb(247, 138, 174) !important;
+    border: none;
+    border-radius: 1em;
+}
+
+/* Quote */
+blockquote{
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+}
+    /* Making 50% border bottom & left */
+blockquote::before{
+  content : "";
+  position: absolute;
+  height  : 2px;
+  width   : 50%;
+  border-bottom: 2px solid gray;
+  left: 0;
+  bottom: 0;
+}
+    /* Making 50% border top & right */
+blockquote::after{
+    content : "";
+    position: absolute;
+    height  : 2px;
+    width   : 50%;
+    border-bottom: 2px solid gray;
+    right: 0;
+    top: 0;
+  }
+
+  /* footer */
+  .footer{
+      background: rgb(239, 250, 239);
+  }
